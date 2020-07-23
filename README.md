@@ -4,9 +4,9 @@ go-metrics-clickhouse
 This is a utility for the [go-metrics](https://github.com/rcrowley/go-metrics) library which will send the metrics to [ClickHouse](https://clickhouse.tech/).
 
 Initial version of source code is forked from [go-metrics-influxdb](https://github.com/vrischmann/go-metrics-influxdb) and all of the influxdb related code was removed and re-programmed for ClickHouse database.
-That's the reason why the behavior of module and API signature privoided is very similar to go-metrics-influxdb.
+That's the reason why the behavior of module and API signature provided is very similar to that of go-metrics-influxdb.
 
-This module supports align to interval feature (which means modification of reporting time, not sampling time) and tagging as go-metrics-influxdb does.
+This module supports align to interval feature (which means modification of reporting time, not actual sampling time) and tagging as go-metrics-influxdb does.
 
 Note
 ----
