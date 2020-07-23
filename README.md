@@ -25,7 +25,7 @@ import "github.com/wingsof/go-metrics-clickhouse"
 go clickhouse.ClickHouseWithTags(
     metrics.DefaultRegistry,    // metrics registry
     time.Second * 10,           // interval
-    metricsHost,                // the ClickHouse url (host:port) port should be TCP port (not http api port) ex) host1:9000
+    hostport,                   // your ClickHouse url (host:port). port should be TCP port (not http api port) ex) host1:9000
     database,                   // your ClickHouse database
     table,                      // your ClickHouse table
     user,                       // your ClickHouse user
